@@ -13,7 +13,5 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    @IBOutlet var startButton: [UIButton]!
-    @IBAction func directionsButton(sender: UIButton) {
+    
     }
-}

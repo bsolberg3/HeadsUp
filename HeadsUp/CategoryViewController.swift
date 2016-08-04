@@ -22,4 +22,6 @@ class CategoryViewController: UIViewController {
     }
     @IBAction func onTappedLandmarksButton(sender: AnyObject) {
     }
+    
+    
 }
