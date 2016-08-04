@@ -15,6 +15,12 @@
 		FCBEFC471D526C770061F414 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC461D526C770061F414 /* CategoryViewController.swift */; };
 		FCBEFC4B1D526D060061F414 /* DirectionViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */; };
 		FCBEFC4F1D5276260061F414 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC4E1D5276260061F414 /* GameViewController.swift */; };
+		FCF0A06F1D538AE9009E4E08 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A06E1D538AE9009E4E08 /* MoviesViewController.swift */; };
+		FCF0A0711D538B0C009E4E08 /* LandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0701D538B0C009E4E08 /* LandmarkViewController.swift */; };
+		FCF0A0731D538B61009E4E08 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0721D538B61009E4E08 /* TVViewController.swift */; };
+		FCF0A0751D538BA9009E4E08 /* AccentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */; };
+		FCF0A0771D538BCE009E4E08 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */; };
+		FCF0A0791D538C06009E4E08 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0781D538C06009E4E08 /* FoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		FCBEFC461D526C770061F414 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionViewContoller.swift; sourceTree = "<group>"; };
 		FCBEFC4E1D5276260061F414 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../GameViewController.swift; sourceTree = "<group>"; };
+		FCF0A06E1D538AE9009E4E08 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		FCF0A0701D538B0C009E4E08 /* LandmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkViewController.swift; sourceTree = "<group>"; };
+		FCF0A0721D538B61009E4E08 /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccentsViewController.swift; sourceTree = "<group>"; };
+		FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		FCF0A0781D538C06009E4E08 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,12 @@
 				FCBEFC461D526C770061F414 /* CategoryViewController.swift */,
 				FCBEFC4E1D5276260061F414 /* GameViewController.swift */,
 				FCBEFC381D5269A10061F414 /* Main.storyboard */,
+				FCF0A0781D538C06009E4E08 /* FoodViewController.swift */,
+				FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */,
+				FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */,
+				FCF0A0721D538B61009E4E08 /* TVViewController.swift */,
+				FCF0A0701D538B0C009E4E08 /* LandmarkViewController.swift */,
+				FCF0A06E1D538AE9009E4E08 /* MoviesViewController.swift */,
 				FCBEFC3B1D5269A10061F414 /* Assets.xcassets */,
 				FCBEFC3D1D5269A10061F414 /* LaunchScreen.storyboard */,
 				FCBEFC401D5269A10061F414 /* Info.plist */,
@@ -145,10 +163,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCBEFC4F1D5276260061F414 /* GameViewController.swift in Sources */,
+				FCF0A0711D538B0C009E4E08 /* LandmarkViewController.swift in Sources */,
+				FCF0A0731D538B61009E4E08 /* TVViewController.swift in Sources */,
+				FCF0A0791D538C06009E4E08 /* FoodViewController.swift in Sources */,
 				FCBEFC371D5269A10061F414 /* ViewController.swift in Sources */,
 				FCBEFC4B1D526D060061F414 /* DirectionViewContoller.swift in Sources */,
 				FCBEFC471D526C770061F414 /* CategoryViewController.swift in Sources */,
 				FCBEFC351D5269A10061F414 /* AppDelegate.swift in Sources */,
+				FCF0A0771D538BCE009E4E08 /* SportsViewController.swift in Sources */,
+				FCF0A0751D538BA9009E4E08 /* AccentsViewController.swift in Sources */,
+				FCF0A06F1D538AE9009E4E08 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
