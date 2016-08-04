@@ -12,6 +12,9 @@
 		FCBEFC3A1D5269A10061F414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC381D5269A10061F414 /* Main.storyboard */; };
 		FCBEFC3C1D5269A10061F414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC3B1D5269A10061F414 /* Assets.xcassets */; };
 		FCBEFC3F1D5269A10061F414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC3D1D5269A10061F414 /* LaunchScreen.storyboard */; };
+		FCBEFC471D526C770061F414 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC461D526C770061F414 /* CategoryViewController.swift */; };
+		FCBEFC4B1D526D060061F414 /* DirectionViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */; };
+		FCBEFC4F1D5276260061F414 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC4E1D5276260061F414 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FCBEFC3B1D5269A10061F414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBEFC3E1D5269A10061F414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCBEFC401D5269A10061F414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBEFC461D526C770061F414 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionViewContoller.swift; sourceTree = "<group>"; };
+		FCBEFC4E1D5276260061F414 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				FCBEFC341D5269A10061F414 /* AppDelegate.swift */,
 				FCBEFC361D5269A10061F414 /* ViewController.swift */,
+				FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */,
+				FCBEFC461D526C770061F414 /* CategoryViewController.swift */,
+				FCBEFC4E1D5276260061F414 /* GameViewController.swift */,
 				FCBEFC381D5269A10061F414 /* Main.storyboard */,
 				FCBEFC3B1D5269A10061F414 /* Assets.xcassets */,
 				FCBEFC3D1D5269A10061F414 /* LaunchScreen.storyboard */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBEFC4F1D5276260061F414 /* GameViewController.swift in Sources */,
 				FCBEFC371D5269A10061F414 /* ViewController.swift in Sources */,
+				FCBEFC4B1D526D060061F414 /* DirectionViewContoller.swift in Sources */,
+				FCBEFC471D526C770061F414 /* CategoryViewController.swift in Sources */,
 				FCBEFC351D5269A10061F414 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +300,7 @@
 				FCBEFC451D5269A10061F414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
