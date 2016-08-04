@@ -29,7 +29,7 @@ class MoviesViewController: UIViewController {
             timeLabel.text = String(counter--)
         } else if counter == 0 {
             timer.invalidate()
-            performSegueWithIdentifier("MovieSegue", sender: self)
+            performSegueWithIdentifier("movieSegue", sender: self)
         }
     }
 
