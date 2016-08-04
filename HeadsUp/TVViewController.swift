@@ -14,6 +14,7 @@ class TVViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     var counter = 30
+    var scoreCounter = 0
     var timer = NSTimer()
     override func viewDidLoad() {
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(TVViewController.update), userInfo: nil, repeats: true)
@@ -25,16 +26,24 @@ class TVViewController: UIViewController {
     func update() {
         if counter > 0 {
             timeLabel.text = String(counter--)
+        } else if counter == 0 {
+            timer.invalidate()
+            performSegueWithIdentifier("tvShowSegue", sender: self)
         }
     }
     
     @IBAction func onTappedYesButton(sender: UIButton) {
         let randomTVShow = Int(arc4random_uniform(UInt32(tvShowArray.count)))
         questionLabel.text = tvShowArray[randomTVShow]
+        scoreCounter += 1
            }
     @IBAction func onTappedNoButton(sender: UIButton) {
         let randomTVShow = Int(arc4random_uniform(UInt32(tvShowArray.count)))
         questionLabel.text = tvShowArray[randomTVShow]
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! ScoreViewController
+        dvc.score = scoreCounter
     }
 
 }

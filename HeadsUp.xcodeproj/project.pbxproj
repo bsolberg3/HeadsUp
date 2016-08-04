@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FCBEFC351D5269A10061F414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC341D5269A10061F414 /* AppDelegate.swift */; };
-		FCBEFC371D5269A10061F414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEFC361D5269A10061F414 /* ViewController.swift */; };
 		FCBEFC3A1D5269A10061F414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC381D5269A10061F414 /* Main.storyboard */; };
 		FCBEFC3C1D5269A10061F414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC3B1D5269A10061F414 /* Assets.xcassets */; };
 		FCBEFC3F1D5269A10061F414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBEFC3D1D5269A10061F414 /* LaunchScreen.storyboard */; };
@@ -20,12 +19,12 @@
 		FCF0A0751D538BA9009E4E08 /* AccentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */; };
 		FCF0A0771D538BCE009E4E08 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */; };
 		FCF0A0791D538C06009E4E08 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A0781D538C06009E4E08 /* FoodViewController.swift */; };
+		FCF0A07B1D53A005009E4E08 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A07A1D53A005009E4E08 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCBEFC311D5269A10061F414 /* HeadsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBEFC341D5269A10061F414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCBEFC361D5269A10061F414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCBEFC391D5269A10061F414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCBEFC3B1D5269A10061F414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBEFC3E1D5269A10061F414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccentsViewController.swift; sourceTree = "<group>"; };
 		FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		FCF0A0781D538C06009E4E08 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		FCF0A07A1D53A005009E4E08 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				FCBEFC341D5269A10061F414 /* AppDelegate.swift */,
-				FCBEFC361D5269A10061F414 /* ViewController.swift */,
 				FCBEFC4A1D526D060061F414 /* DirectionViewContoller.swift */,
 				FCBEFC461D526C770061F414 /* CategoryViewController.swift */,
 				FCBEFC381D5269A10061F414 /* Main.storyboard */,
+				FCF0A07A1D53A005009E4E08 /* ScoreViewController.swift */,
 				FCF0A0781D538C06009E4E08 /* FoodViewController.swift */,
 				FCF0A0761D538BCE009E4E08 /* SportsViewController.swift */,
 				FCF0A0741D538BA9009E4E08 /* AccentsViewController.swift */,
@@ -160,9 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF0A0711D538B0C009E4E08 /* LandmarkViewController.swift in Sources */,
+				FCF0A07B1D53A005009E4E08 /* ScoreViewController.swift in Sources */,
 				FCF0A0731D538B61009E4E08 /* TVViewController.swift in Sources */,
 				FCF0A0791D538C06009E4E08 /* FoodViewController.swift in Sources */,
-				FCBEFC371D5269A10061F414 /* ViewController.swift in Sources */,
 				FCBEFC4B1D526D060061F414 /* DirectionViewContoller.swift in Sources */,
 				FCBEFC471D526C770061F414 /* CategoryViewController.swift in Sources */,
 				FCBEFC351D5269A10061F414 /* AppDelegate.swift in Sources */,

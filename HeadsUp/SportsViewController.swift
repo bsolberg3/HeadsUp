@@ -16,6 +16,7 @@ class SportsViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     var counter = 30
+    var scoreCounter = 0
     var timer = NSTimer()
     override func viewDidLoad() {
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SportsViewController.update), userInfo: nil, repeats: true)
@@ -26,6 +27,9 @@ class SportsViewController: UIViewController {
     func update() {
         if counter > 0 {
             timeLabel.text = String(counter--)
+        } else if counter == 0 {
+            timer.invalidate()
+            performSegueWithIdentifier("sportsSegue", sender: self)
         }
     }
 
@@ -37,5 +41,8 @@ class SportsViewController: UIViewController {
         let randomSports = Int(arc4random_uniform(UInt32(sportsArray.count)))
         questionLabel.text = sportsArray[randomSports]
     }
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! ScoreViewController
+        dvc.score = scoreCounter
+    }
 }

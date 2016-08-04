@@ -14,6 +14,7 @@ class FoodViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     var counter = 30
+    var scoreCounter = 0
     var timer = NSTimer()
     override func viewDidLoad() {
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(FoodViewController.update), userInfo: nil, repeats: true)
@@ -24,6 +25,9 @@ class FoodViewController: UIViewController {
     func update() {
         if counter > 0 {
             timeLabel.text = String(counter--)
+        } else if counter == 0 {
+            timer.invalidate()
+            performSegueWithIdentifier("foodSegue", sender: self)
         }
     }
 
@@ -36,5 +40,9 @@ class FoodViewController: UIViewController {
     @IBAction func onTappedNoButton(sender: UIButton) {
         let randomFood = Int(arc4random_uniform(UInt32(foodArray.count)))
          questionLabel.text = foodArray[randomFood]
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! ScoreViewController
+        dvc.score = scoreCounter
     }
 }
